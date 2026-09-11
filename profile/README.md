@@ -2,412 +2,123 @@
   <img
     src="https://avatars.githubusercontent.com/u/328034605?s=400&u=49e2acc19944b34971abaf6678ff6794c3b0fa07&v=4"
     alt="LocMedSec Logo"
-    width="180"
+    width="160"
   />
 </p>
 
 <h1 align="center">LocMedSec</h1>
 
 <p align="center">
-  <strong>Local Media Security</strong>
+  <strong>Your Media. Your Device. Your Privacy.</strong>
 </p>
 
 <p align="center">
-  Your Media. Your Device. Your Privacy.
+  A free, open-source media toolkit that converts, compresses, resizes, and downloads your video, audio, and images — entirely on your own computer.
 </p>
 
 <p align="center">
-  Open-source, privacy-first media tools designed to run locally on your device.
+  <a href="https://github.com/LocMedSec/locmedsec/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+  <a href="https://github.com/LocMedSec/locmedsec/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/LocMedSec/locmedsec?style=flat&color=yellow"></a>
+  <a href="https://github.com/LocMedSec/locmedsec/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/LocMedSec/locmedsec"></a>
+  <a href="https://github.com/LocMedSec/locmedsec/pulls"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
+  <a href="https://github.com/LocMedSec/locmedsec/releases"><img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey"></a>
+  <br/>
+  <img alt="Made with Rust" src="https://img.shields.io/badge/core-Rust-orange?logo=rust&logoColor=white">
+  <img alt="Made with Tauri" src="https://img.shields.io/badge/desktop-Tauri-24C8DB?logo=tauri&logoColor=white">
+  <img alt="No telemetry" src="https://img.shields.io/badge/telemetry-none-success">
+  <img alt="Local first" src="https://img.shields.io/badge/processing-100%25%20local-informational">
 </p>
 
 <p align="center">
-  <a href="https://github.com/LocMedSec/locmedsec">Main Project</a> •
-  <a href="https://github.com/LocMedSec/locmedsec/issues">Issues</a> •
-  <a href="https://github.com/LocMedSec/locmedsec/discussions">Discussions</a> •
-  <a href="https://github.com/LocMedSec/locmedsec/blob/main/CONTRIBUTING.md">Contributing</a>
+  <a href="https://github.com/LocMedSec/locmedsec">Get Started</a> •
+  <a href="https://github.com/LocMedSec/locmedsec/issues">Report a Bug</a> •
+  <a href="https://github.com/LocMedSec/locmedsec/discussions">Discussions</a>
 </p>
 
 ---
 
-## 🔐 About LocMedSec
+## Why LocMedSec
 
-**LocMedSec** stands for **Local Media Security**.
+Most online media converters make you upload your files to someone else's server first. LocMedSec doesn't.
 
-We are building an open-source media toolkit focused on one simple principle:
+Everything — converting, compressing, resizing, trimming, downloading — happens locally on your device. Your files never leave your machine unless you choose to send them somewhere yourself.
 
-> **Your media should stay under your control.**
-
-LocMedSec aims to make powerful media processing accessible without requiring users to upload their personal files to third-party cloud services.
-
-The project is designed to process media locally on the user's device while providing a simple experience for everyday users and powerful controls for advanced users.
+No account required. No upload limits. No tracking. No ads.
 
 ---
 
-## 🎯 Our Mission
+## What You Can Do With It
 
-We want to make media processing:
-
-* 🔒 **Private** — process files locally whenever possible
-* 🌍 **Open** — open source and community driven
-* ⚡ **Fast** — use the capabilities of the user's own hardware
-* 🛠️ **Powerful** — support professional media workflows
-* 🧩 **Extensible** — designed for plugins, presets, and future backends
-* 💻 **Cross-platform** — Windows, macOS, and Linux
-* ❤️ **Accessible** — simple enough for everyone
-
----
-
-## ✨ What LocMedSec Aims To Provide
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### 🎬 Video
-
-* Format conversion
-* Compression
-* Resizing
-* Cropping
-* Trimming
-* Merging
-* Frame extraction
-* Audio extraction
-* Codec configuration
-* Bitrate and quality control
-* Hardware acceleration
+Convert between formats, compress large files, resize, crop, trim, merge clips, extract frames or audio, and fine-tune codecs, bitrate, and quality — with hardware acceleration when your device supports it.
 
 ### 🎵 Audio
-
-* Audio conversion
-* Compression
-* Format conversion
-* Bitrate control
-* Audio extraction
-* Metadata handling
+Convert formats, adjust bitrate, compress, extract audio from video, and edit metadata.
 
 ### 🖼️ Images
+Convert formats, resize, compress, transform, batch-edit, and manage metadata across hundreds of files at once.
 
-* Format conversion
-* Resizing
-* Compression
-* Transformation
-* Metadata handling
-* Batch processing
+</td>
+<td width="50%" valign="top">
 
 ### 📦 Batch Processing
-
-Process multiple files using the same operation or preset.
+Point it at a folder, apply one setting, and let it process every file the same way — no repeating yourself file by file.
 
 ### 🌐 Media Downloading
-
-Download supported media directly to the user's device where permitted by the source and applicable rights.
+Save supported media straight to your device, where permitted by the source and applicable rights.
 
 ### 🔧 Custom Pipelines
+Chain steps together into a repeatable workflow — for example: resize → strip metadata → compress → convert — and run it in one click, every time.
 
-Build workflows by combining multiple processing operations.
-
-Example:
-
-```text
-Input
-  ↓
-Resize
-  ↓
-Remove Metadata
-  ↓
-Compress
-  ↓
-Convert
-  ↓
-Output
-```
+</td>
+</tr>
+</table>
 
 ---
 
-## 🔒 Privacy First
-
-Privacy isn't an additional feature.
-
-**It is part of the architecture.**
-
-LocMedSec is designed around:
-
-* Local-first processing
-* No unnecessary cloud uploads
-* No mandatory account
-* No unnecessary telemetry
-* User-controlled files
-* Isolated network functionality
-* Safe temporary-file handling
-* Secure process execution
-* Explicit permission boundaries
-
-Media processing should happen on your machine whenever technically possible.
-
----
-
-## 🏗️ Architecture
-
-LocMedSec is designed as a modular system:
-
-```text
-┌───────────────────────────────┐
-│       Desktop Application     │
-│        Tauri + React          │
-└───────────────┬───────────────┘
-                │
-                ▼
-┌───────────────────────────────┐
-│          Rust Core             │
-│     Application + Domain       │
-└───────────────┬───────────────┘
-                │
-        ┌───────┴────────┐
-        ▼                ▼
-┌─────────────┐   ┌──────────────┐
-│ Job System  │   │   Pipeline   │
-│ Queue/Worker│   │   Processing  │
-└──────┬──────┘   └───────┬──────┘
-       │                   │
-       └─────────┬─────────┘
-                 ▼
-        ┌──────────────────┐
-        │     Backends     │
-        ├──────────────────┤
-        │ FFmpeg           │
-        │ libvips          │
-        │ yt-dlp           │
-        │ Future Backends  │
-        └──────────────────┘
-```
-
-The core is intentionally independent of the desktop interface so that future applications can reuse the same engine.
-
----
-
-## 🧰 Technology
-
-LocMedSec is built with open-source technologies including:
-
-| Technology     | Purpose                     |
-| -------------- | --------------------------- |
-| **Rust**       | Core engine                 |
-| **Tauri**      | Desktop application         |
-| **React**      | User interface              |
-| **TypeScript** | Frontend development        |
-| **FFmpeg**     | Video and audio processing  |
-| **libvips**    | Image processing            |
-| **yt-dlp**     | Supported media downloading |
-| **SQLite**     | Local application data      |
-
----
-
-## 💻 Platforms
-
-LocMedSec is being designed for:
-
-* 🍎 macOS
-* 🪟 Windows
-* 🐧 Linux
-
-The goal is to provide a consistent experience across platforms while respecting platform-specific capabilities.
-
----
-
-## 🧩 Designed For Extension
-
-LocMedSec is intentionally modular.
-
-Future community contributions can include:
-
-* New media backends
-* New codecs
-* New processing operations
-* Community presets
-* Plugins
-* Platform integrations
-* Hardware acceleration support
-* UI improvements
-* CLI tooling
-* Automation workflows
-* Documentation
-* Translations
-
-The architecture is designed so contributors can improve individual parts without needing to understand the entire codebase.
-
----
-
-## 🗺️ Roadmap
-
-### Phase 1 — Core
-
-* [ ] Rust workspace
-* [ ] Media domain model
-* [ ] Job abstraction
-* [ ] Job queue
-* [ ] Worker system
-* [ ] FFmpeg backend
-* [ ] Media probing
-* [ ] Progress reporting
-* [ ] Job cancellation
-* [ ] Output validation
-
-### Phase 2 — Processing
-
-* [ ] Video conversion
-* [ ] Audio conversion
-* [ ] Compression
-* [ ] Resize
-* [ ] Crop
-* [ ] Trim
-* [ ] Merge
-* [ ] Audio extraction
-* [ ] Frame extraction
-* [ ] Image conversion
-
-### Phase 3 — Desktop
-
-* [ ] Tauri desktop application
-* [ ] Drag and drop
-* [ ] Job management
-* [ ] Progress interface
-* [ ] Presets
-* [ ] Batch processing
-* [ ] Settings
-* [ ] Hardware acceleration
-
-### Phase 4 — Downloader
-
-* [ ] Downloader backend
-* [ ] Download queue
-* [ ] Download progress
-* [ ] Format selection
-* [ ] Download-to-process pipelines
-
-### Phase 5 — Community
-
-* [ ] Plugin architecture
-* [ ] Community presets
-* [ ] Localization
-* [ ] CLI
-* [ ] More platform integrations
-* [ ] Contributor ecosystem
-
----
-
-## 🤝 Community
-
-LocMedSec is built for the community.
-
-There are many ways to contribute:
-
-### 💻 Code
-
-Improve the core, desktop application, processing engines, or platform support.
-
-### 🐛 Bugs
-
-Found something broken?
-
-Open an issue with reproduction steps and relevant system information.
-
-### 💡 Ideas
-
-Have an idea for a useful workflow or feature?
-
-Start a discussion before implementing large changes.
-
-### 🎨 Design
-
-Help improve the user experience, accessibility, icons, layouts, and visual language.
-
-### 🌍 Localization
-
-Help make LocMedSec accessible to users around the world.
-
-### 📚 Documentation
-
-Improve guides, examples, architecture documentation, and onboarding.
-
----
-
-## 🚀 Contributing
-
-Before contributing, please read:
-
-* [Contributing Guide](https://github.com/LocMedSec/locmedsec/blob/main/CONTRIBUTING.md)
-* [Security Policy](https://github.com/LocMedSec/locmedsec/blob/main/SECURITY.md)
-* [Code of Conduct](https://github.com/LocMedSec/locmedsec/blob/main/CODE_OF_CONDUCT.md)
-
-We welcome contributions of all sizes.
-
-A documentation fix, bug report, test, translation, or small improvement can be just as valuable as a large feature.
-
----
-
-## 🔐 Security
-
-Security issues should **not** be reported publicly.
-
-Please follow the project's security policy for responsible disclosure:
-
-[Security Policy](https://github.com/LocMedSec/locmedsec/blob/main/SECURITY.md)
-
----
-
-## 📜 Open Source
-
-LocMedSec is an open-source project.
-
-We believe powerful media tools should be accessible, transparent, and community driven.
-
-The project welcomes contributors from around the world.
-
-See the repository's `LICENSE` file for the applicable license.
-
----
-
-## ⭐ Support The Project
-
-If you find LocMedSec useful:
-
-* ⭐ Star the repository
-* 🐛 Report bugs
-* 💡 Share ideas
-* 🔧 Submit improvements
-* 📚 Improve documentation
-* 🌍 Help with translations
-* 📢 Tell others about the project
-
-Every contribution helps.
-
----
-
-## 🌎 Built For Everyone
-
-LocMedSec is not built around a single operating system, workflow, or type of user.
-
-Whether you're:
-
-* a student,
-* developer,
-* creator,
-* photographer,
-* filmmaker,
-* researcher,
-* privacy-conscious user,
-* or simply someone who needs to convert a file,
-
-LocMedSec aims to make the process easier while keeping your data under your control.
-
----
-
-<p align="center">
-  <strong>LocMedSec</strong>
+## Built Around Privacy
+
+Privacy isn't a setting you have to turn on. It's the default.
+
+<p align="left">
+  <img alt="No cloud uploads" src="https://img.shields.io/badge/☁️_cloud%20uploads-none-lightgrey">
+  <img alt="No account" src="https://img.shields.io/badge/👤_account%20required-no-lightgrey">
+  <img alt="No tracking" src="https://img.shields.io/badge/📡_tracking-none-lightgrey">
+  <img alt="Open source" src="https://img.shields.io/badge/📖_source-open-lightgrey">
 </p>
 
-<p align="center">
-  Local Media Security
-</p>
+- Files are processed locally, not uploaded to the cloud
+- No account or sign-up required
+- No unnecessary telemetry or tracking
+- Full control over your files at every step
+
+You shouldn't have to trust a third-party server with your personal photos and videos just to convert a file.
+
+---
+
+## Who It's For
+
+Whether you're a student compressing a video for a deadline, a photographer batch-converting a shoot, a creator prepping clips for upload, or just someone who needs to convert one file without giving up their privacy — LocMedSec is built to make the process fast, simple, and entirely yours.
+
+---
+
+## Get Involved
+
+LocMedSec is open source and built with the community, for the community. Whether it's code, bug reports, design feedback, translations, or documentation — every contribution helps.
+
+- ⭐ [Star the project](https://github.com/LocMedSec/locmedsec)
+- 🐛 [Report a bug](https://github.com/LocMedSec/locmedsec/issues)
+- 💡 [Share an idea](https://github.com/LocMedSec/locmedsec/discussions)
+- 🤝 [Read the Contributing Guide](https://github.com/LocMedSec/locmedsec/blob/main/CONTRIBUTING.md)
+
+---
 
 <p align="center">
+  <strong>LocMedSec</strong><br />
   Your Media. Your Device. Your Privacy.
 </p>
 
